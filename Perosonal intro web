@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* 背景色可以根据需要调整 */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4a90e2; /* 多巴胺色调之一 */
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        section {
+            margin: 2em 0;
+        }
+        .contact-form, .consultation {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 5px;
+        }
+        .social-media {
+            margin: 1em 0;
+        }
+        .social-media a {
+            margin: 0 0.5em;
+            color: #4a90e2;
+            text-decoration: none;
+        }
+        .social-media a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>我的个人主页</h1>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>个人简介</h2>
+            <p>这里是你的个人简介。</p>
+        </section>
+
+        <section id="experience">
+            <h2>职业经历</h2>
+            <p>这里是你的职业经历。</p>
+        </section>
+
+        <section id="contact" class="contact-form">
+            <h2>联系我</h2>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">电子邮件:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">留言:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <input type="submit" value="发送">
+            </form>
+        </section>
+
+        <section id="social-media" class="social-media">
+            <h2>社交媒体</h2>
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+        </section>
+
+        <section id="consultation" class="consultation">
+            <h2>咨询栏</h2>
+            <p>这里是你的咨询栏内容。</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 你的名字</p>
+    </footer>
+</body>
+</html>
